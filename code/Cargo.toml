@@ -1,0 +1,38 @@
+[package]
+name = "code"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+    "hello_world",
+    "vars_mut_shadow",
+    "function_returns",
+    "borrow_reference",
+    "text_input",
+    "auth",
+    "login",
+    "auth_enum",
+    "login_enum",
+    "auth_enum_data",
+    "login_enum_data",
+    "auth_enum_option",
+    "login_enum_option",
+    "auth_struct",
+    "login_struct",
+    "auth_vec",
+    "login_vec",
+    "vector_growth",
+    "auth_hashmap",
+    "login_hashmap",
+    "hash_vec_bench",
+    "hash_vec_search",
+    "auth_json",
+    "login_json",
+    "auth_hash",
+    "login_hash",
+    "login_manager",
+    "auth_login_manager",
+]

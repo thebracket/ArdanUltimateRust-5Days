@@ -1,0 +1,7 @@
+[package]
+name = "login_enum_data"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+auth_enum_data = { path = "../auth_enum_data" }

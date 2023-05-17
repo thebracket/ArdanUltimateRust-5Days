@@ -1,0 +1,7 @@
+[package]
+name = "login_hashmap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+auth_hashmap = { path = "../auth_hashmap" }

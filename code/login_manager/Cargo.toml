@@ -1,0 +1,8 @@
+[package]
+name = "login_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+auth_login_manager = { path = "../auth_login_manager" }
+clap = { version = "4.2.7", features = ["derive"] }
