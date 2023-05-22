@@ -11,7 +11,7 @@ This is presented as 5x 1-day classes, which may be taken together or individual
 ## Sessions
 
 1. [Getting Started with Rust](/01-GettingStarted/README.md)
-2. Fearless System Thread Concurrency
+2. [Fearless System Thread Concurrency](/02-SystemThreads/README.md)
 3. Async/Await Concurrency (Green Threads)
 4. Managing Memory & Resources
 5. Build a Network Service
