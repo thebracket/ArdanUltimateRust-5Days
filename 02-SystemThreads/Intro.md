@@ -30,6 +30,28 @@ I recommend bookmarking the following resources:
 
 ## Topics We'll Cover
 
-Today, we're going to take a quick march through the basics of Rust.
+Today, we're going to build on last week's introduction to Rust and focus on a deep-dive into Rust's threading features. Rust makes threading easy---relative to other languages. Rust protects you from data races, and guards against data corruption. It makes it easy to create threads, communicate between them and safely share data. There's a lot of potential pitfalls---even fearless concurrency can be hard. Rust makes it easier.
 
-TODO
+* What is a System Thread? (And how does it differ from `async/await`?)
+* Create your first thread
+* Threads with parameters and closures.
+* Returning data from threads.
+* Dividing workloads for fast execution.
+* Controlling thread parameters.
+* Scoped Threads for easy local data sharing.
+* Sharing Data:
+    * with Atomics.
+    * with Mutexes.
+    * with Read/Write locks.
+    * with lock-free structures.
+* Deadlocks, Poisoning and Panic Attacks.
+* Parking Threads.
+* Sending Data with Channels.
+    * Channels and Ownership.
+    * Sending Functions to Worker Threads.
+* Build a Sime Work Queue
+* CPU Affinity.
+* Thread Priority.
+* Making it easy with `Rayon`
+
+We'll end with a QA, some pointers to crates that can help you, and pointers towards next week.

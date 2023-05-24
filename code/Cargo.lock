@@ -203,6 +203,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 
 [[package]]
+name = "core_affinity"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4436406e93f52cce33bfba4be067a9f7229da44a634c385e4b22cdfaca5f84cc"
+dependencies = [
+ "libc",
+ "num_cpus",
+ "winapi",
+]
+
+[[package]]
 name = "cpufeatures"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -279,6 +290,10 @@ dependencies = [
 
 [[package]]
 name = "data_race"
+version = "0.1.0"
+
+[[package]]
+name = "deadlocks"
 version = "0.1.0"
 
 [[package]]
@@ -439,6 +454,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "log"
+version = "0.4.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abb12e687cfb44aa40f41fc3978ef76448f9b6038cad6aef4259d3c095a2382e"
+dependencies = [
+ "cfg-if",
+]
+
+[[package]]
 name = "login"
 version = "0.1.0"
 dependencies = [
@@ -535,6 +559,10 @@ name = "mutex"
 version = "0.1.0"
 
 [[package]]
+name = "mutex_poisoning"
+version = "0.1.0"
+
+[[package]]
 name = "mutex_timed"
 version = "0.1.0"
 
@@ -612,7 +640,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "rayon_broadcast"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
+name = "rayon_join"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
+name = "rayon_nested_pools"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
 name = "rayon_par_iter"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
+name = "rayon_scopes"
 version = "0.1.0"
 dependencies = [
  "rayon",
@@ -640,6 +696,12 @@ dependencies = [
  "linux-raw-sys",
  "windows-sys 0.48.0",
 ]
+
+[[package]]
+name = "rustversion"
+version = "1.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4f3208ce4d8448b3f3e7d168a73f5e0c43a61e32930de3bceeccedb388b6bf06"
 
 [[package]]
 name = "rwlock"
@@ -742,8 +804,40 @@ name = "text_input"
 version = "0.1.0"
 
 [[package]]
+name = "thread-priority"
+version = "0.13.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c56ce92f1285eaaa11fc1a3201e25de97898c50e87caa4c2aee836fe05288de"
+dependencies = [
+ "bitflags",
+ "cfg-if",
+ "libc",
+ "log",
+ "rustversion",
+ "winapi",
+]
+
+[[package]]
+name = "thread_affinity"
+version = "0.1.0"
+dependencies = [
+ "core_affinity",
+]
+
+[[package]]
+name = "thread_builder"
+version = "0.1.0"
+
+[[package]]
 name = "thread_closures"
 version = "0.1.0"
+
+[[package]]
+name = "thread_priorities"
+version = "0.1.0"
+dependencies = [
+ "thread-priority",
+]
 
 [[package]]
 name = "thread_return"
@@ -780,6 +874,28 @@ name = "version_check"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
+
+[[package]]
+name = "winapi"
+version = "0.3.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419"
+dependencies = [
+ "winapi-i686-pc-windows-gnu",
+ "winapi-x86_64-pc-windows-gnu",
+]
+
+[[package]]
+name = "winapi-i686-pc-windows-gnu"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6"
+
+[[package]]
+name = "winapi-x86_64-pc-windows-gnu"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "windows-sys"
