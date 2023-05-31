@@ -1,0 +1,12 @@
+[package]
+name = "rust_errors_async"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+futures = "0.3.28"
+thiserror = "1.0.40"
+tokio = { version = "1.28.2", features = ["full"] }
