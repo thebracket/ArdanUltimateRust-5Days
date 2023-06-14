@@ -37,4 +37,6 @@ At the end of this session, you'll have working templates for a lot of common ta
 ## Fourth Hour
 
 * (Continuing to give the collector a diet)
-* See you next week!
+* End-of Class QA
+* Thanks for Coming
+* Please stay in touch! My email address is herbert.wolverson@ardanlabs.com
