@@ -14,5 +14,5 @@ This is presented as 5x 1-day classes, which may be taken together or individual
 2. [Fearless System Thread Concurrency](/02-SystemThreads/README.md)
 3. [Async/Await Concurrency (Green Threads)](/03-Async/README.md)
 4. [Managing Memory & Resources](./04-Memory/README.md)
-5. Build a Network Service
+5. [Build a Network Service](./05-Server/README.md)
 
