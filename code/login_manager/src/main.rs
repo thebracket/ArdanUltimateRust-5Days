@@ -93,7 +93,7 @@ fn main() {
             username,
             password,
             admin,
-        }) => add_user(username, password, admin.is_some()),
+        }) => add_user(username, password, admin.unwrap_or(false)),
         Some(Commands::Delete { username }) => delete_user(&username),
         Some(Commands::ChangePassword { username, new_password }) => {
             change_password(&username, &new_password)

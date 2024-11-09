@@ -206,7 +206,7 @@ fn main() {
     match cli.command {
         Some(Commands::List) => list_users(),
         Some(Commands::Add { username, password, admin }) => 
-            add_user(username, password, admin.is_some()),
+            add_user(username, password, admin.unwrap_or(false)),
         None => {
             println!("Run with --help to see instructions");
             std::process::exit(0);
