@@ -33,6 +33,7 @@ fn main() {
             println!("Current users (in a thread)");
             let users = USERS.read().unwrap();
             println!("{users:?}");
+            std::mem::drop(users); // Release the lock before sleeping
             std::thread::sleep(std::time::Duration::from_secs(3));
         }
     });
